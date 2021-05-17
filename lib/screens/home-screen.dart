@@ -36,8 +36,8 @@ class HomeScreen extends StatelessWidget {
   var textList2 = [
     'Versuche für 30 sek zu Breakdancen',
     'Summe ein lied bis es jemand erkennt',
-    'c',
-    'd',
+    'Erzähle eine Wahrheit über dich',
+    'Erreiche Jannik per Telefon',
   ];
   var textList3 = [
     '1',
