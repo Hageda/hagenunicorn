@@ -105,21 +105,25 @@ class HomeScreen extends StatelessWidget {
     'Alle die einen Penis haben trinken',
     'Alle Mädchen mit offenen Haaren trinken',
   ];
+  hexColor (String colorhexcode){
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
+      appBar: AppBar(automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         title: Center(
           child: Text('Hagen Unicorn', textScaleFactor: 2,
             style: TextStyle(
                 fontFamily: 'kenyan_i',
-                color: Colors.pink
+                color: Color(0xFFBE2FB9)
             ),),
         ),
       ),
-      body: Column(
+      body:
+      Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Container(
@@ -131,7 +135,7 @@ class HomeScreen extends StatelessWidget {
               width: 300,
               height: 180,
               child: TextButton(
-                style: TextButton.styleFrom(primary: Colors.pink),
+                style: TextButton.styleFrom(primary: Color(0xFFBE2FB9)),
                 onPressed: () {
                   var textToShow = this.textList[this.superRandomNumber()];
                   Navigator.push(
@@ -141,7 +145,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text('FSK 18', textScaleFactor: 4,
                   style: TextStyle(
                       fontFamily: 'kenyan_i',
-                      color: Colors.pink
+                      color: Color(0xFFBE2FB9)
                   ),),
               ),
             ),
@@ -155,7 +159,7 @@ class HomeScreen extends StatelessWidget {
               width: 300,
               height: 180,
               child: TextButton(
-                style: TextButton.styleFrom(primary: Colors.pink),
+                style: TextButton.styleFrom(primary: Color(0xFFBE2FB9)),
                 onPressed: (){
                   var textToShow2 = this.textList2[this.superRandomNumber2()];
                   Navigator.push(
@@ -165,7 +169,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text('Brücken Karte', textScaleFactor: 4,
                   style: TextStyle(
                       fontFamily: 'kenyan_i',
-                      color: Colors.pink
+                      color: Color(0xFFBE2FB9)
                   ),),
               ),
             ),
@@ -179,7 +183,7 @@ class HomeScreen extends StatelessWidget {
               width: 300,
               height: 180,
               child: TextButton(
-                style: TextButton.styleFrom(primary: Colors.pink),
+                style: TextButton.styleFrom(primary: Color(0xFFBE2FB9)),
                 onPressed: () {
                   var textToShow3 = this.textList3[this.superRandomNumber3()];
                   Navigator.push(
@@ -189,7 +193,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text('FSK 16', textScaleFactor: 4,
                   style: TextStyle(
                       fontFamily: 'kenyan_i',
-                      color: Colors.pink
+                      color: Color(0xFFBE2FB9)
                   ),),
               ),
             ),
